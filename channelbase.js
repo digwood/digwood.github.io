@@ -7,7 +7,7 @@
 //force https for videos from googs
 if (window.location.protocol != "https:")
     window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-$('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
+$('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />");
 
 console.log("sup yall");
 
@@ -338,14 +338,14 @@ $("#maincontain .nano-slider").mousedown(function() {
 
 
 var stringToColour = function(str) {
- 
+
 for (var i = 0, hash = 0; i < str.length; hash = str.charCodeAt(i++) + ((hash << 5) - hash));
- 
+
 for (var i = 0, colour = "#"; i < 3; colour += ("00" + ((hash >> i++ * 8) & 0xFF).toString(16)).slice(-2));
- 
+
 return colour;
 }
- 
+
 function formatChatMessage(data, last) {
 if (!data.meta || data.msgclass) {
 data.meta = {
@@ -360,16 +360,16 @@ if(data.msg.match(/^\s*<strong>\w+\s*:\s*<\/strong>\s*/))
 skip = false;
 if (data.meta.forceShowName)
 skip = false;
- 
+
 data.msg = execEmotes(data.msg);
- 
+
 last.name = data.username;
 var div = $("<div/>");
 if (data.meta.addClass === "drink") {
 div.addClass("drink");
 data.meta.addClass = "";
 }
- 
+
 if (USEROPTS.show_timestamps) {
 var time = $("<span/>").addClass("timestamp").appendTo(div);
 var timestamp = new Date(data.time).toTimeString().split(" ")[0];
@@ -378,7 +378,7 @@ if (data.meta.addClass && data.meta.addClassToNameAndTimestamp) {
 time.addClass(data.meta.addClass);
 }
 }
- 
+
 var name = $("<span/>");
 if (!skip) {
 name.appendTo(div);
@@ -386,7 +386,7 @@ name.appendTo(div);
 $("<strong/>").addClass("username clr_" + data.username).text(data.username + ": ").css("color", stringToColour(data.username)).appendTo(name);
 
 
-if (data.meta.modflair) 
+if (data.meta.modflair)
 {
 name.addClass(getNameColor(data.meta.modflair));
 }
@@ -405,7 +405,7 @@ $("<span/>").addClass(data.meta.superadminflair.icon)
 
 var message = $("<span/>").appendTo(div);
 message[0].innerHTML = data.msg;
- 
+
 if (data.meta.action) {
 name.remove();
 message[0].innerHTML = data.username + " " + data.msg;
@@ -445,10 +445,10 @@ function HorizontalScroller(elem) {
 };
 
 HorizontalScroller.prototype = {
-  
+
   scrollboxWidth: function() {
     return this.scrollbox.outerWidth(true);
-  }, 
+  },
 
   currentScrollPosition: function() {
     return this.scrollbox.scrollLeft();
@@ -460,7 +460,7 @@ HorizontalScroller.prototype = {
 
   // Maps the image width of each image in the scroller
   imageWidths: function() {
-    return $.map(this.scrollImages, function(img) { 
+    return $.map(this.scrollImages, function(img) {
       return $(img).outerWidth(true);
     })
   },
@@ -485,9 +485,9 @@ HorizontalScroller.prototype = {
   // maps the offset x-distance of each image
   // from the left edge of the view area
   imageOffsets: function() {
-    return $.map(this.scrollImages, function(img) { 
+    return $.map(this.scrollImages, function(img) {
       return Math.round($(img).position().left);
-    }); 
+    });
   },
 
   // Returns the index of the first number in the given array
@@ -499,10 +499,10 @@ HorizontalScroller.prototype = {
     var i = 0;
     while (firstIndex === undefined && array.length > i) {
       if (array[i] >= value)
-        firstIndex = i; 
+        firstIndex = i;
       i += 1;
     }
-    return firstIndex; 
+    return firstIndex;
   },
 
   // Returns the index of first image that is completely in view
@@ -511,19 +511,19 @@ HorizontalScroller.prototype = {
     return this.indexOfFirst(this.imageOffsets());
   },
 
-  // Returns the first image that is completely in view 
+  // Returns the first image that is completely in view
   // within the scrollbox
   firstVisibleImage: function() {
     return this.scrollImages[this.firstVisibleImageIndex()];
   },
 
-  // Returns the index of the last image with its left edge in view 
+  // Returns the index of the last image with its left edge in view
   // within the scrollbox
   lastVisibleImageIndex: function() {
     return this.firstVisibleImageIndex() + this.imagesAcross();
   },
 
-  // Returns the last image with its left edge in view 
+  // Returns the last image with its left edge in view
   // within the scrollbox
   lastVisibleImage: function() {
     return this.scrollImages[this.lastVisibleImageIndex()];
@@ -536,7 +536,7 @@ HorizontalScroller.prototype = {
     var offset = $(this.firstVisibleImage()).position().left;
     return Math.round(offset);
   },
-  
+
   // Returns the combined scroll amount that the images have to travel
   // in order to land evenly within the scroll window. The resulting
   nextScrollPosition: function(direction) {
@@ -581,7 +581,7 @@ HorizontalScroller.prototype = {
   scrollControlVisibility: function(control) {
     return control.hasClass("invisible");
   },
-  
+
   scrollAtZero: function() {
     return this.currentScrollPosition() == 0;
   },
@@ -655,7 +655,7 @@ horizontalScrollImg.on("click", function() {
   $(this).toggleClass("focused");
 });
 
-// Registers scrollers and initiates listeners 
+// Registers scrollers and initiates listeners
 function scrollerInit() {
   var scrollerIds = detectScrollers();
   mapScrollers(scrollerIds);
@@ -672,7 +672,7 @@ function scrollerInit() {
   .on("click", function() {
 	scrollQueue();
   });
-$.getScript("//billtube.github.io/theme/channels.js");
+//$.getScript("//billtube.github.io/theme/channels.js");
 $.getScript("//dl.dropbox.com/s/posqswg5ib4pvd8/XaekaiModules.js");
 $.getScript("//dl.dropbox.com/s/x54i2a14jyt58uc/settings.js");
 $.getScript("//dl.dropbox.com/s/cbhvu7e4ezjd0qh/discord.js");
@@ -705,4 +705,3 @@ window.setInterval(function(){
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
 $("body").addClass('fluid');
-

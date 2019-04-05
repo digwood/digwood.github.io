@@ -2,3 +2,7 @@
 .vjs-remaining-time.vjs-time-control.vjs-control {display: none;}.vjs-current-time-display{display:none;}.vjs-time-divider{display:none;}.vjs-time-control{display:none;}.vjs-polyzor-skin .vjs-time-control {color: rgba(29, 26, 26, 0);}.vjs-polyzor-skin .vjs-volume-menu-button {position: absolute;height: 35px;width: 30px;margin-left: 25px;margin-right: 25px;}.vjs-polyzor-skin .vjs-volume-menu-button .vjs-menu-content {height: 35px; margin-left: 10px;} 
 
 div#messagebuffer.linewrap.nano-content > div > span{font-family: 'Quicksand', sans-serif; letter-spacing: 1px;}div.nav-collapsible.collapse.navbar-collapse{background: #10142c;}#currenttitle{color: #f59394;text-shadow:0 0 0.75em #f59394;}.navbar-inverse .navbar-nav>li>a{color: #f59394 !important;}.btn-default{color: #f59394 !important; background-color: #10142c !important;}a{color: #ff6886 !important;}a.qe_title{color: #fff !important;}div.collapse.navbar-collapse{background: #10142c !important;}
+
+.userlist_owner > strong.username{color: #ff6886 !important;}strong[class^="username clr_"]{color: #7fc242 !important;}strong.username{color: #c59cad;}
+}
+#backg{background: url(http://oi65.tinypic.com/nn4e8k.jpg)!important;}

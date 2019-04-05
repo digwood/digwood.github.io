@@ -8,6 +8,7 @@
 if (window.location.protocol != "https:")
     window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />");
+$('head').append('<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />');
 
 console.log("sup yall");
 
@@ -26,7 +27,7 @@ console.log("sup yall");
 
 $.getScript("//billtube.github.io/theme/overlay.js");
 $('head').append("<link rel='stylesheet' href='//dl.dropbox.com/s/zc50vc2o2mq2q9n/base.css' />");
-$('head').append("<link rel='stylesheet' href='//rawgit.com/BillTube/theme/gh-pages/polyzor.css' />");
+$('head').append("<link rel='stylesheet' href='//digwood.github.io/polyzor.css' />");
 $("#videowrap").addClass("vjs-polyzor-skin");
 $(".server-msg-reconnect").addClass("fa fa-plug");
 $(".server-msg-reconnect").text("");

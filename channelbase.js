@@ -26,7 +26,7 @@ console.log("sup yall");
 /*player skin*/
 
 $.getScript("//billtube.github.io/theme/overlay.js");
-$('head').append("<link rel='stylesheet' href='//digwood.github.io/base.css' />");
+$('head').append("<link rel='stylesheet' href='//dl.dropbox.com/s/zc50vc2o2mq2q9n/base.css' />");
 $('head').append("<link rel='stylesheet' href='//digwood.github.io/polyzor.css' />");
 $("#videowrap").addClass("vjs-polyzor-skin");
 $(".server-msg-reconnect").addClass("fa fa-plug");

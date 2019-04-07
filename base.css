@@ -1210,8 +1210,7 @@ form#logoutform {
 	background: hsl(0,0%,13%);
 	color: hsl(0,0%,53%);
 	border: none;
-	max-height: 81px;
-    height: 81px;
+	max-height: 50px;
     //overflow: hidden;
 }
 @media (max-width: 880px){

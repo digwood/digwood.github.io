@@ -1865,15 +1865,6 @@ table {
 .label-info {
     background-color: rgba(74, 72, 78, 0.63);
 }
-ul.dropdown-menu{
-    z-index: 5001;
-}
-ul.nav.navbar-nav:last-child>ul.dropdown-menu{
-    left: -45px;
-}
-.modal{
-    z-index: 5001;
-}
 .modal-content {
     background: rgba(27, 28, 31, 0.97);
 }
@@ -2072,6 +2063,10 @@ min-width: 50px;
 @media (min-width: 768px){
 .navbar-header {
     height: 80px;
+}
+.indicator{
+    margin-top: 15px;
+    margin-left: 8px;
 }
 .container {
     width: 100%;

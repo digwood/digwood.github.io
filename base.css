@@ -15,7 +15,7 @@
     font-size: 8px;
 }
 #modflair {
- display:none;   
+ display:none;
 }
 .channel-emote {
     min-width: 70px;
@@ -1362,7 +1362,7 @@ background: #060606d1;
 			border-bottom: 1px solid hsl(0,0%,100%);
 		}
 		#chatheader i:hover {
-   
+
 		}
 	/* Chat bar */
 	#chatline, #guestlogin>input, #guestlogin>.input-group-addon {
@@ -1377,7 +1377,7 @@ background: #060606d1;
 	p#currenttitle {
 	max-width: 500px;
     overflow: hidden;
-    overflow-wrap: break-word;	
+    overflow-wrap: break-word;
     max-height: 35px;
 	}
 	.section, .well, #controlsrow {
@@ -1488,12 +1488,12 @@ img.chat-avatar.chat-avatar_small:hover {
      cursor: pointer;
      transform: scale(1.9);
   -webkit-animation: anti-wiggle 0s ease-in-out;
-          animation: anti-wiggle 0s ease-in-out; 
+          animation: anti-wiggle 0s ease-in-out;
 }
 img.chat-avatar.chat-avatar_small:hover:after {
      cursor: pointer;
   -webkit-animation: wiggle 0s ease-in-out;
-          animation: wiggle 0s ease-in-out; 
+          animation: wiggle 0s ease-in-out;
 }
 @-webkit-keyframes wiggle {
   20% {
@@ -1629,7 +1629,7 @@ strong.username {
     min-height: 31px;
     cursor: pointer;
     text-align: center;
-    position: relative;   
+    position: relative;
     border-bottom: 1px solid rgba(117, 161, 206, 0.5);
     cursor: pointer;
     -webkit-appearance: none;
@@ -2035,7 +2035,7 @@ min-width: 50px;
 .bg-wrapper, #backg {
     opacity:0.70;
     overflow: hidden;
-    background-size: cover!important;
+    /*background-size: cover!important;*/
     background-position: center center!important;
     position: absolute;
     width: 100%;
@@ -2139,7 +2139,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
   box-shadow: 0px 0px 1px #3c6d59;
 }
-.navbar-nav>li:first-child { 
+.navbar-nav>li:first-child {
     display:none
 }
 #userlist {
@@ -2418,37 +2418,37 @@ input[type="range"]::-webkit-slider-thumb:active {
     border-color: transparent;
     opacity: 0.2;
   }
-  
+
   2% {
     border-color: #1FFFFF;
     opacity: 1;
   }
-  
+
   4% {
     border-color: transparent;
     opacity: 0.2;
   }
-  
+
   8% {
     border-color: #1FFFFF;
     opacity: 1;
   }
-  
+
   28% {
     border-color: #1FFFFF;
     opacity: 1;
   }
-  
+
   30% {
     border-color: transparent;
     opacity: 0.2;
   }
-  
+
   36% {
     border-color: #1FFFFF;
     opacity: 1;
   }
-  
+
   100% {
     border-color: #1FFFFF;
     opacity: 1;
